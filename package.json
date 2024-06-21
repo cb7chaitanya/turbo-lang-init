@@ -1,0 +1,20 @@
+{
+  "name": "turbo-lang-init",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/inquirer": "^9.0.7",
+    "commander": "^12.1.0",
+    "inquirer": "^9.2.23"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.7"
+  }
+}
