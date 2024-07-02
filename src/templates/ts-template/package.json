@@ -2,7 +2,7 @@
     "name": "ts-project",
     "version": "1.0.0",
     "scripts": {
-      "dev": "tsc && node dist/index.js"
+      "dev": "tsc -b && node dist/index.js"
     },
     "devDependencies": {
       "typescript": "^4.0.0"
