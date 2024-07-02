@@ -1,0 +1,14 @@
+{
+  "name": "rust-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "cargo build",
+    "dev": "cargo run",
+    "test": "cargo test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
