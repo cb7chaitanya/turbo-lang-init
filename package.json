@@ -1,6 +1,6 @@
 {
   "name": "turbo-lang-init",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -11,7 +11,8 @@
     "sol": "cd apps/sol && npm run dev",
     "rs": "cd apps/rs && npm run dev",
     "j": "cd apps/j && npm run dev",
-    "ts": "cd apps/ts && npm run dev"
+    "ts": "cd apps/ts && npm run dev",
+    "klss": "cd apps/klss && npm run dev"
   },
   "bin": {
     "tli": "./dist/index.js"

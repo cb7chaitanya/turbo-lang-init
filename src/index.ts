@@ -4,13 +4,10 @@ import inquirer from "inquirer";
 import fs from "fs"
 import fsExtra from "fs-extra";
 import path from "path"
+import { fileURLToPath } from 'url';
 import { execSync } from "child_process";
 
 const program = new Command();
-
-const __filename = new URL(import.meta.url).pathname;
-const __dirname = path.dirname(__filename);
-
 
 const templates: { [key: string]: string } = {
     'javascript': 'js-template',
@@ -18,9 +15,11 @@ const templates: { [key: string]: string } = {
     'rust': 'rs-template',
     'solidity': 'sol-template'
 }
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const createProject = (language: string, directory: string) => {
-    const templateDir = path.resolve(process.cwd(), 'src', 'templates', templates[language]);
+    const templateDir = path.resolve(__dirname, '..', 'src', 'templates', templates[language]);
     const projectDir = path.join(process.cwd(), 'apps', directory);
 
     if(fs.existsSync(projectDir)) {
