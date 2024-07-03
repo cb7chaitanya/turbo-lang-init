@@ -35,14 +35,14 @@ You will be prompted to select the language/framework and to provide a project n
 ### Examples
 #### Initialize a TypeScript project:
 
-    turbo-lang-init init
+    npx tli init
 
 * Select typescript from the list of available templates and provide a project name, e.g., my-ts-project.
 
 #### Initialize a React project with TypeScript:
 
 
-    turbo-lang-init init
+    npx tli init
 
 * Select React+Typescript from the list of available templates and provide a project name, e.g., my-react-ts-project.
 
