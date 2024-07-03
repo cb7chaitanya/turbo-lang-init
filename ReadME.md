@@ -2,11 +2,15 @@
 
 Turbo Lang Init is a CLI tool to initialize multi-/multi-framework projects in a Turborepo environment. It supports JavaScript, TypeScript, Rust, Solidity, Next.js, React, and their TypeScript variants.
 
+
 ## Features
 * Initialize projects with templates for multiple languages and frameworks.
 * Automatically install dependencies.
 * Automatically add npm scripts for project management.
-Installation
+
+### Installation
+
+#### Package on npm registry: https://www.npmjs.com/package/turbo-lang-init
 
 ### To install Turbo Lang Init, run:
 
@@ -57,6 +61,7 @@ When you initialize a project, it will be created under the apps/ directory. For
 ### Contributing
 
 Contributions are welcome! If you have suggestions for improvements, feel free to open an issue or submit a pull request.
+#### Repository: https://github.com/cb7chaitanya/turbo-lang-init
 
 * Fork the repository.
 * Create a new branch: git checkout -b feature/my-feature.
