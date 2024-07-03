@@ -11,7 +11,11 @@ const templates = {
     'javascript': 'js-template',
     'typescript': 'ts-template',
     'rust': 'rs-template',
-    'solidity': 'sol-template'
+    'solidity': 'sol-template',
+    'Next': 'next-template',
+    'React': 'react-template',
+    'Next+Typescript': 'next-ts-template',
+    'React+Typescript': 'react-ts-template',
 };
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -55,8 +59,8 @@ program
         {
             type: 'list',
             name: 'language',
-            message: 'Select your project language',
-            choices: ['javascript', 'typescript', 'rust', 'solidity']
+            message: 'Select your project language/framework',
+            choices: Object.keys(templates)
         },
         {
             type: 'input',

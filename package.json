@@ -14,7 +14,11 @@
     "ts": "cd apps/ts && npm run dev",
     "klss": "cd apps/klss && npm run dev",
     "heii": "cd apps/heii && npm run dev",
-    "sol-test": "cd apps/sol-test && npm run dev"
+    "sol-test": "cd apps/sol-test && npm run dev",
+    "next-test": "cd apps/next-test && npm run dev",
+    "react-test": "cd apps/react-test && npm run dev",
+    "next-ts-test": "cd apps/next-ts-test && npm run dev",
+    "react-ts-test": "cd apps/react-ts-test && npm run dev"
   },
   "bin": {
     "tli": "./dist/index.js"
