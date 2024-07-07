@@ -29,8 +29,10 @@ const createProject = (language, directory) => {
     try {
         fs.mkdirSync(projectDir, { recursive: true });
         fsExtra.copySync(templateDir, projectDir);
-        const packageJsonPath = path.join(process.cwd(), 'package.json');
+        const packageJsonPath = path.join(projectDir, 'package.json');
         const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
+        packageJson.name = `${directory}-project`;
+        fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
         if (!packageJson.scripts[directory]) {
             packageJson.scripts[directory] = `cd apps/${directory} && npm run dev`;
             fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));

@@ -1,6 +1,6 @@
 {
-  "name": "turbo-lang-init",
-  "version": "1.0.9",
+  "name": "no-project",
+  "version": "1.1.0",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -18,7 +18,9 @@
     "next-test": "cd apps/next-test && npm run dev",
     "react-test": "cd apps/react-test && npm run dev",
     "next-ts-test": "cd apps/next-ts-test && npm run dev",
-    "react-ts-test": "cd apps/react-ts-test && npm run dev"
+    "react-ts-test": "cd apps/react-ts-test && npm run dev",
+    "yes": "cd apps/yes && npm run dev",
+    "no": "cd apps/no && npm run dev"
   },
   "bin": {
     "tli": "./dist/index.js"
